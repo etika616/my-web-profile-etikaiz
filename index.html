@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etika Ismatus Zahra | Curriculum Vitae & Portfolio</title>
+  <meta name="description" content="Personal Curriculum Vitae & Portfolio Resmi Etika Ismatus Zahra - Data Analyst, Information Systems & Front-End Web Developer.">
+  
+  <!-- Google Fonts: Poppins (Heading) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= TOP STICKY NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <span class="brand-monogram">EZ</span>
+        <span class="brand-name">Etika Ismatus Zahra</span>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+          <li><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+          <li><a href="#skills" class="nav-link"><i class="fa-solid fa-laptop-code"></i> Skills</a></li>
+          <li><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+          <li><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Print CV & Mobile Toggle) -->
+      <div class="nav-actions">
+        <button id="btn-print-nav" class="btn btn-nav-cta print-hide" title="Cetak / Simpan PDF">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Unduh CV</span>
+        </button>
+
+        <button id="menu-toggle" class="menu-toggle print-hide" aria-label="Buka Menu Navigasi">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN TWO-COLUMN CONTAINER ================= -->
+  <div class="cv-layout" id="home">
+
+    <!-- ================= KOLOM KIRI (35%): PROFILE SIDEBAR ================= -->
+    <aside class="sidebar-col">
+      <div class="sidebar-inner">
+        
+        <!-- Profile Photo with Fallback Initials -->
+        <div class="profile-photo-wrapper">
+          <div class="photo-frame">
+            <img src="profile.jpg" alt="Foto Profil Etika Ismatus Zahra" id="profile-img" class="profile-img" onerror="this.style.display='none'; document.getElementById('avatar-fallback').style.display='flex';">
+            <div id="avatar-fallback" class="avatar-fallback" style="display: none;">
+              <span>EZ</span>
+            </div>
+          </div>
+          <div class="status-indicator" title="Tersedia untuk Peluang & Kolaborasi">
+            <span class="status-dot"></span>
+            <span class="status-text">Available for Opportunities</span>
+          </div>
+        </div>
+
+        <!-- Personal Header Info -->
+        <div class="sidebar-header-info">
+          <h1 class="profile-name">Etika Ismatus Zahra</h1>
+          <p class="profile-role">Data Analyst | Information Systems &amp; Front-End Web Developer</p>
+          <div class="role-divider"></div>
+          <p class="profile-tagline">
+            "Mengubah data menjadi wawasan strategis dan membangun sistem informasi web yang estetis, fungsional, serta berorientasi pada pengguna."
+          </p>
+        </div>
+
+        <!-- Action Buttons (CTA) -->
+        <div class="sidebar-cta-group print-hide">
+          <button id="btn-print-sidebar" class="btn btn-primary btn-block">
+            <i class="fa-solid fa-download"></i> Download CV (PDF)
+          </button>
+          <a href="#contact" class="btn btn-outline-white btn-block">
+            <i class="fa-solid fa-paper-plane"></i> Contact Me
+          </a>
+        </div>
+
+        <!-- Statistics Highlight Badge Cards -->
+        <div class="stats-badge-card">
+          <div class="stat-badge-item">
+            <div class="stat-badge-icon"><i class="fa-solid fa-list-check"></i></div>
+            <div class="stat-badge-data">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Proyek Terselesaikan</span>
+            </div>
+          </div>
+          
+          <div class="stat-badge-item">
+            <div class="stat-badge-icon"><i class="fa-solid fa-trophy"></i></div>
+            <div class="stat-badge-data">
+              <span class="stat-number">2</span>
+              <span class="stat-label">Kompetisi Nasional &amp; Internasional</span>
+            </div>
+          </div>
+
+          <div class="stat-badge-item">
+            <div class="stat-badge-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="stat-badge-data">
+              <span class="stat-number">2</span>
+              <span class="stat-label">Sertifikasi Resmi</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Official Contact Links Panel -->
+        <div class="sidebar-contact-box">
+          <h3 class="sidebar-section-title"><i class="fa-solid fa-address-card"></i> Kontak Resmi</h3>
+          <ul class="sidebar-contact-list">
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <div class="contact-text-wrap">
+                <span class="contact-label">Email</span>
+                <a href="mailto:etika616@gmail.com" class="contact-value link-accent">etika616@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa-brands fa-linkedin"></i>
+              <div class="contact-text-wrap">
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/etika-ismatus-zahra-29a84641a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="contact-value link-accent">
+                  Etika Ismatus Zahra <i class="fa-solid fa-arrow-up-right-from-square small-icon"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Quick Summary Info -->
+        <div class="sidebar-education-mini">
+          <h3 class="sidebar-section-title"><i class="fa-solid fa-building-columns"></i> Institusi Akademik</h3>
+          <p class="edu-mini-school">Politeknik Indonusa Surakarta</p>
+          <p class="edu-mini-dept">D4 Teknologi Rekayasa Perangkat Lunak</p>
+        </div>
+
+      </div>
+    </aside>
+
+    <!-- ================= KOLOM KANAN (65%): MAIN CONTENT ================= -->
+    <main class="content-col">
+
+      <!-- ================= SECTION: ABOUT ME ================= -->
+      <section class="content-section" id="about">
+        <div class="section-title-wrapper">
+          <div class="section-badge"><i class="fa-solid fa-user-tie"></i> Ringkasan Profesional</div>
+          <h2 class="section-heading">Tentang Saya</h2>
+          <div class="heading-line"></div>
+        </div>
+
+        <div class="about-card">
+          <p class="about-paragraph">
+            Mahasiswa D4 Teknologi Rekayasa Perangkat Lunak Politeknik Indonusa Surakarta dengan minat mendalam pada analisis data, pengembangan sistem informasi, dan pemecahan masalah bisnis. Memadukan latar belakang rekayasa perangkat lunak, logika algoritma, serta pemahaman kuat mengenai prinsip desain visual, tipografi, dan UI/UX untuk mengekstrak wawasan (insight) data maupun menerjemahkan konsep desain menjadi aplikasi web yang estetis, responsif, dan fungsional. Komunikatif, aktif berorganisasi, dan bersemangat menjembatani kebutuhan pengguna dengan solusi teknologi yang tepat guna.
+          </p>
+        </div>
+
+        <!-- ================= SUB-SECTION: AREAS OF EXPERTISE ================= -->
+        <div class="expertise-block">
+          <h3 class="sub-heading"><i class="fa-solid fa-bullseye"></i> Areas of Expertise (Bidang Kompetensi)</h3>
+          
+          <div class="expertise-grid">
+            <div class="expertise-card">
+              <div class="expertise-icon"><i class="fa-solid fa-chart-pie"></i></div>
+              <h4 class="expertise-title">Data Analysis &amp; Visualization</h4>
+              <p class="expertise-desc">Menganalisis pola data relasional serta menyajikan visualisasi data yang informatif dan mendukung keputusan strategis.</p>
+            </div>
+
+            <div class="expertise-card">
+              <div class="expertise-icon"><i class="fa-solid fa-network-wired"></i></div>
+              <h4 class="expertise-title">Information Systems Development</h4>
+              <p class="expertise-desc">Merancang arsitektur sistem informasi terstruktur yang memadukan integrasi basis data dan alur proses bisnis.</p>
+            </div>
+
+            <div class="expertise-card">
+              <div class="expertise-icon"><i class="fa-solid fa-code"></i></div>
+              <h4 class="expertise-title">Front-End Web Development</h4>
+              <p class="expertise-desc">Mengembangkan antarmuka web modern, interaktif, responsif, dan berstandar w3c menggunakan HTML5, CSS3, dan JavaScript.</p>
+            </div>
+
+            <div class="expertise-card">
+              <div class="expertise-icon"><i class="fa-brands fa-figma"></i></div>
+              <h4 class="expertise-title">UI/UX Design (Figma)</h4>
+              <p class="expertise-desc">Menyusun riset pengguna, wireframing sistematis, dan prototipe desain interaktif dengan prinsip usability yang teruji.</p>
+            </div>
+
+            <div class="expertise-card">
+              <div class="expertise-icon"><i class="fa-solid fa-database"></i></div>
+              <h4 class="expertise-title">Database Management (MySQL)</h4>
+              <p class="expertise-desc">Pemodelan entitas data relasional (ERD), normalisasi tabel, query SQL efisien, dan deployment hosting basis data.</p>
+            </div>
+
+            <div class="expertise-card">
+              <div class="expertise-icon"><i class="fa-solid fa-diagram-project"></i></div>
+              <h4 class="expertise-title">System Analysis &amp; Software Design</h4>
+              <p class="expertise-desc">Menganalisis kebutuhan fungsional sistem, perancangan diagram alir, serta spesifikasi rekayasa perangkat lunak.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION: EDUCATION ================= -->
+      <section class="content-section" id="education">
+        <div class="section-title-wrapper">
+          <div class="section-badge"><i class="fa-solid fa-graduation-cap"></i> Latar Belakang Akademis</div>
+          <h2 class="section-heading">Riwayat Pendidikan</h2>
+          <div class="heading-line"></div>
+        </div>
+
+        <div class="timeline-vertical">
+          <div class="timeline-entry">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="timeline-school">Politeknik Indonusa Surakarta</h3>
+                  <h4 class="timeline-program">Diploma IV (D4) — Teknologi Rekayasa Perangkat Lunak</h4>
+                </div>
+                <span class="timeline-badge-year"><i class="fa-regular fa-calendar-check"></i> 2025 – Sekarang</span>
+              </div>
+              <p class="timeline-details">
+                Menempuh pendidikan vokasi rekayasa perangkat lunak terapan dengan konsentrasi pengembangan sistem informasi, analisis data dan algoritma, perancangan basis data, pemodelan sistem bisnis, serta rekayasa antarmuka web modern.
+              </p>
+              <div class="timeline-tags">
+                <span class="blue-tag">Software Engineering</span>
+                <span class="blue-tag">Database Systems</span>
+                <span class="blue-tag">Data Analysis</span>
+                <span class="blue-tag">Web Development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION: TECHNICAL SKILLS ================= -->
+      <section class="content-section" id="skills">
+        <div class="section-title-wrapper">
+          <div class="section-badge"><i class="fa-solid fa-sliders"></i> Evaluasi Kompetensi</div>
+          <h2 class="section-heading">Technical Skills &amp; Kemampuan</h2>
+          <div class="heading-line"></div>
+          <p class="section-intro">Tingkat penguasaan teknis berbasis capaian proyek akademis, kompetisi, dan sertifikasi resmi.</p>
+        </div>
+
+        <div class="skills-category-wrapper">
+          
+          <!-- Category 1: Front-End & UI/UX -->
+          <div class="skill-category-block">
+            <h3 class="skill-category-title">
+              <i class="fa-solid fa-desktop"></i> Front-End &amp; UI/UX Design
+            </h3>
+            <div class="skill-list">
+              
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-html5"></i> HTML5 (Semantic &amp; Accessible)</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-level="90"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-css3-alt"></i> CSS3 (Flexbox, Grid &amp; Animations)</span>
+                  <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-level="88"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-figma"></i> Figma (UI/UX Design &amp; Prototyping)</span>
+                  <span class="skill-percentage">86%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-level="86"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-square-js"></i> JavaScript (Vanilla DOM &amp; Logic)</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-level="80"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-mobile-screen"></i> Responsive Web Design</span>
+                  <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-level="88"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 2: Data & Backend -->
+          <div class="skill-category-block">
+            <h3 class="skill-category-title">
+              <i class="fa-solid fa-server"></i> Data &amp; Backend Development
+            </h3>
+            <div class="skill-list">
+              
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-database"></i> MySQL (Relational DB &amp; Queries)</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-level="85"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-table-cells"></i> Database Management (Schema &amp; Hosting)</span>
+                  <span class="skill-percentage">84%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-level="84"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-php"></i> PHP (Backend &amp; Data Integration)</span>
+                  <span class="skill-percentage">78%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-level="78"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-java"></i> Java (OOP &amp; Core Structures)</span>
+                  <span class="skill-percentage">76%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-level="76"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-python"></i> Python (Data Logic &amp; Fundamentals)</span>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-level="75"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-sitemap"></i> System Analysis (UML &amp; Business Flow)</span>
+                  <span class="skill-percentage">82%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-level="82"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 3: Tools & Fundamentals -->
+          <div class="skill-category-block">
+            <h3 class="skill-category-title">
+              <i class="fa-solid fa-toolbox"></i> Tools &amp; Professional Fundamentals
+            </h3>
+            <div class="skill-list">
+              
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-globe"></i> XAMPP &amp; Web Hosting Deployment</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-level="85"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-microchip"></i> Computer Hardware &amp; Networking Basics</span>
+                  <span class="skill-percentage">84%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-level="84"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub (Version Control)</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-level="80"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-microphone-lines"></i> Public Speaking &amp; Event Leadership</span>
+                  <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-level="88"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= SECTION: EXPERIENCE, COMPETITIONS, PROJECTS & CERTIFICATIONS ================= -->
+      <section class="content-section" id="experience">
+        <div class="section-title-wrapper">
+          <div class="section-badge"><i class="fa-solid fa-award"></i> Portofolio &amp; Rekam Jejak</div>
+          <h2 class="section-heading">Pengalaman, Proyek &amp; Prestasi</h2>
+          <div class="heading-line"></div>
+          <p class="section-intro">Kumpulan proyek nyata, partisipasi kompetisi nasional &amp; internasional, kontribusi organisasi, serta sertifikasi resmi.</p>
+        </div>
+
+        <!-- Filter Tab Buttons -->
+        <div class="filter-tab-container">
+          <button class="filter-btn active" data-filter="all">
+            <i class="fa-solid fa-border-all"></i> Semua (9)
+          </button>
+          <button class="filter-btn" data-filter="kompetisi">
+            <i class="fa-solid fa-trophy"></i> Kompetisi (2)
+          </button>
+          <button class="filter-btn" data-filter="organisasi">
+            <i class="fa-solid fa-users"></i> Organisasi (2)
+          </button>
+          <button class="filter-btn" data-filter="proyek">
+            <i class="fa-solid fa-laptop-code"></i> Proyek (3)
+          </button>
+          <button class="filter-btn" data-filter="sertifikasi">
+            <i class="fa-solid fa-certificate"></i> Sertifikasi (2)
+          </button>
+        </div>
+
+        <!-- Cards Grid Container -->
+        <div class="records-grid" id="records-grid">
+
+          <!-- ITEM 1: KOMPETISI 1 (JUARA 2) -->
+          <article class="record-card" data-category="kompetisi">
+            <div class="record-header">
+              <span class="category-pill pill-kompetisi"><i class="fa-solid fa-trophy"></i> Juara 2 — Kompetisi</span>
+              <span class="record-year"><i class="fa-regular fa-calendar"></i> 2026</span>
+            </div>
+            <h3 class="record-title">Juara 2 — Lomba Karya Tulis Ilmiah (KTI) IT Fest Universitas Paramadina</h3>
+            <p class="record-organizer"><i class="fa-solid fa-building-columns"></i> Penyelenggara: Universitas Paramadina</p>
+            <p class="record-desc">
+              Merancang gagasan solusi teknologi inovatif berbasis riset dan analisis sistem secara terstruktur hingga berhasil meraih prestasi Juara 2 dalam kompetisi karya tulis ilmiah tingkat nasional.
+            </p>
+            <div class="record-footer">
+              <span class="badge-accent badge-winner"><i class="fa-solid fa-medal"></i> Juara 2 Tingkat Nasional</span>
+              <span class="badge-accent">Riset &amp; Analisis Sistem</span>
+            </div>
+          </article>
+
+          <!-- ITEM 2: KOMPETISI 2 -->
+          <article class="record-card" data-category="kompetisi">
+            <div class="record-header">
+              <span class="category-pill pill-kompetisi"><i class="fa-solid fa-trophy"></i> Kompetisi</span>
+              <span class="record-year"><i class="fa-regular fa-calendar"></i> 2026</span>
+            </div>
+            <h3 class="record-title">Peserta — Gayatama International Competition (Kategori UI/UX Design)</h3>
+            <p class="record-organizer"><i class="fa-brands fa-figma"></i> Kategori: UI/UX Design</p>
+            <p class="record-desc">
+              Melakukan riset pengalaman pengguna (user research), penyusunan wireframe, hingga pembuatan prototipe antarmuka aplikasi interaktif sesuai standar kegunaan (usability) pada kompetisi tingkat internasional.
+            </p>
+            <div class="record-footer">
+              <span class="badge-accent">Tingkat Internasional</span>
+              <span class="badge-accent">User Research &amp; Prototyping</span>
+            </div>
+          </article>
+
+          <!-- ITEM 3: ORGANISASI 1 -->
+          <article class="record-card" data-category="organisasi">
+            <div class="record-header">
+              <span class="category-pill pill-organisasi"><i class="fa-solid fa-users"></i> Organisasi</span>
+              <span class="record-year"><i class="fa-regular fa-calendar"></i> Oktober 2026</span>
+            </div>
+            <h3 class="record-title">Ketua Pelaksana — Acara Pisah Sambut TRPL</h3>
+            <p class="record-organizer"><i class="fa-solid fa-sitemap"></i> Program Studi Teknologi Rekayasa Perangkat Lunak</p>
+            <p class="record-desc">
+              Memimpin koordinasi lintas divisi, menyusun konsep acara, mengelola alur operasional, serta memastikan kelancaran pelaksanaan kegiatan penyambutan dan pelepasan mahasiswa Program Studi Teknologi Rekayasa Perangkat Lunak.
+            </p>
+            <div class="record-footer">
+              <span class="badge-accent">Leadership</span>
+              <span class="badge-accent">Event Management</span>
+            </div>
+          </article>
+
+          <!-- ITEM 4: ORGANISASI 2 -->
+          <article class="record-card" data-category="organisasi">
+            <div class="record-header">
+              <span class="category-pill pill-organisasi"><i class="fa-solid fa-users"></i> Organisasi</span>
+              <span class="record-year"><i class="fa-regular fa-calendar"></i> Maret 2026</span>
+            </div>
+            <h3 class="record-title">Master of Ceremony (MC) — Acara Buka Bersama HIMAPROTEKSA</h3>
+            <p class="record-organizer"><i class="fa-solid fa-microphone"></i> Himpunan Mahasiswa Program Studi TRPL</p>
+            <p class="record-desc">
+              Memandu jalannya rangkaian acara buka puasa bersama Himpunan Mahasiswa Program Studi Teknologi Rekayasa Perangkat Lunak secara formal, interaktif, dan komunikatif.
+            </p>
+            <div class="record-footer">
+              <span class="badge-accent">Public Speaking</span>
+              <span class="badge-accent">Komunikasi Interpersonal</span>
+            </div>
+          </article>
+
+          <!-- ITEM 5: PROYEK 1 -->
+          <article class="record-card" data-category="proyek">
+            <div class="record-header">
+              <span class="category-pill pill-proyek"><i class="fa-solid fa-laptop-code"></i> Proyek Terselesaikan</span>
+              <span class="record-year"><i class="fa-solid fa-code"></i> Web System</span>
+            </div>
+            <h3 class="record-title">Sistem Web Absensi Ekspo MedTech</h3>
+            <div class="project-tech-tags">
+              <span class="tech-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+              <span class="tech-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+              <span class="tech-tag"><i class="fa-brands fa-figma"></i> Figma</span>
+            </div>
+            <p class="record-desc">
+              Merancang desain antarmuka pengguna (UI/UX) menggunakan Figma serta mengembangkan halaman web sistem absensi digital yang responsif dan ramah pengguna untuk kebutuhan pencatatan kehadiran pengunjung pada kegiatan Ekspo MedTech.
+            </p>
+            <div class="record-footer">
+              <span class="badge-accent">UI/UX Implementation</span>
+              <span class="badge-accent">Digital Attendance</span>
+            </div>
+          </article>
+
+          <!-- ITEM 6: PROYEK 2 -->
+          <article class="record-card" data-category="proyek">
+            <div class="record-header">
+              <span class="category-pill pill-proyek"><i class="fa-solid fa-laptop-code"></i> Proyek Terselesaikan</span>
+              <span class="record-year"><i class="fa-solid fa-database"></i> Database Deployment</span>
+            </div>
+            <h3 class="record-title">Sistem Manajemen Basis Data Terintegrasi Hosting</h3>
+            <div class="project-tech-tags">
+              <span class="tech-tag"><i class="fa-solid fa-database"></i> MySQL</span>
+              <span class="tech-tag"><i class="fa-solid fa-server"></i> XAMPP</span>
+              <span class="tech-tag"><i class="fa-solid fa-cloud"></i> Web Hosting</span>
+            </div>
+            <p class="record-desc">
+              Merancang struktur relasional basis data, mengelola skema tabel menggunakan XAMPP dan MySQL, serta melakukan deployment dan konfigurasi database ke layanan hosting aktif pada proyek Semester 2.
+            </p>
+            <div class="record-footer">
+              <span class="badge-accent">Relational Database</span>
+              <span class="badge-accent">Production Hosting</span>
+            </div>
+          </article>
+
+          <!-- ITEM 7: PROYEK 3 -->
+          <article class="record-card" data-category="proyek">
+            <div class="record-header">
+              <span class="category-pill pill-proyek"><i class="fa-solid fa-laptop-code"></i> Proyek Terselesaikan</span>
+              <span class="record-year"><i class="fa-solid fa-id-badge"></i> Personal Web</span>
+            </div>
+            <h3 class="record-title">Personal Digital CV &amp; Portfolio Website</h3>
+            <div class="project-tech-tags">
+              <span class="tech-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+              <span class="tech-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+              <span class="tech-tag"><i class="fa-brands fa-square-js"></i> JavaScript</span>
+            </div>
+            <p class="record-desc">
+              Merancang dan membangun website portofolio serta Curriculum Vitae digital interaktif satu halaman yang responsif, formal, dan terstruktur sebagai media personal branding profesional.
+            </p>
+            <div class="record-footer">
+              <span class="badge-accent">Personal Branding</span>
+              <span class="badge-accent">Responsive One-Page</span>
+            </div>
+          </article>
+
+          <!-- ITEM 8: SERTIFIKASI 1 -->
+          <article class="record-card" data-category="sertifikasi">
+            <div class="record-header">
+              <span class="category-pill pill-sertifikasi"><i class="fa-solid fa-certificate"></i> Sertifikasi Resmi</span>
+              <span class="record-year"><i class="fa-solid fa-shield-check"></i> Certified</span>
+            </div>
+            <h3 class="record-title">Computer Hardware Basics</h3>
+            <p class="record-organizer"><i class="fa-solid fa-building-circle-check"></i> Penerbit: Cisco Networking Academy</p>
+            <p class="record-desc">
+              Sertifikasi kompetensi dasar perangkat keras komputer, perakitan komponen, pemeliharaan sistem, serta pemecahan masalah teknis dasar (troubleshooting).
+            </p>
+            <div class="record-footer">
+              <span class="badge-accent">Cisco NetAcad</span>
+              <span class="badge-accent">Hardware Troubleshooting</span>
+            </div>
+          </article>
+
+          <!-- ITEM 9: SERTIFIKASI 2 -->
+          <article class="record-card" data-category="sertifikasi">
+            <div class="record-header">
+              <span class="category-pill pill-sertifikasi"><i class="fa-solid fa-certificate"></i> Sertifikasi Resmi</span>
+              <span class="record-year"><i class="fa-solid fa-shield-check"></i> Certified</span>
+            </div>
+            <h3 class="record-title">Java Programming</h3>
+            <p class="record-organizer"><i class="fa-solid fa-building-circle-check"></i> Penerbit: Cursa</p>
+            <p class="record-desc">
+              Sertifikasi penyelesaian pelatihan pemrograman berorientasi objek (OOP), struktur data dasar, dan logika algoritma menggunakan bahasa pemrograman Java.
+            </p>
+            <div class="record-footer">
+              <span class="badge-accent">Object-Oriented Programming</span>
+              <span class="badge-accent">Algorithms &amp; Structures</span>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ================= SECTION: CONTACT ================= -->
+      <section class="content-section" id="contact">
+        <div class="section-title-wrapper">
+          <div class="section-badge"><i class="fa-solid fa-paper-plane"></i> Hubungi Saya</div>
+          <h2 class="section-heading">Informasi Kontak Resmi</h2>
+          <div class="heading-line"></div>
+          <p class="section-intro">Terbuka untuk diskusi proyek, kolaborasi profesional, serta peluang karier di bidang Data Analysis dan Web Development.</p>
+        </div>
+
+        <div class="contact-card-container">
+          
+          <!-- Contact Card: Email -->
+          <div class="contact-box">
+            <div class="contact-box-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-box-content">
+              <span class="contact-box-label">Surat Elektronik (Email)</span>
+              <a href="mailto:etika616@gmail.com" class="contact-box-link" id="email-text">etika616@gmail.com</a>
+              <p class="contact-box-note">Balasan formal untuk penawaran proyek dan komunikasi profesional.</p>
+            </div>
+            <button class="btn btn-copy" id="btn-copy-email" title="Salin Email ke Clipboard">
+              <i class="fa-regular fa-copy"></i>
+              <span>Salin Email</span>
+            </button>
+          </div>
+
+          <!-- Contact Card: LinkedIn -->
+          <div class="contact-box">
+            <div class="contact-box-icon">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="contact-box-content">
+              <span class="contact-box-label">Jejaring Profesional</span>
+              <a href="https://www.linkedin.com/in/etika-ismatus-zahra-29a84641a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="contact-box-link">
+                Etika Ismatus Zahra
+              </a>
+              <p class="contact-box-note">Profil lengkap rekam jejak profesional dan relasi industri.</p>
+            </div>
+            <a href="https://www.linkedin.com/in/etika-ismatus-zahra-29a84641a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <span>Kunjungi Profil</span>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= FOOTER ================= -->
+      <footer class="formal-footer">
+        <div class="footer-inner">
+          <p class="footer-copy">
+            &copy; 2026 <strong>Etika Ismatus Zahra</strong>. Curriculum Vitae &amp; Portfolio Pribadi.
+          </p>
+          <p class="footer-meta">
+            Dirancang secara formal &amp; dibangun menggunakan HTML5, CSS3 murni &amp; JavaScript Vanilla.
+          </p>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- ================= TOAST NOTIFICATION (COPY EMAIL) ================= -->
+  <div id="toast" class="toast-notification" role="alert" aria-live="assertive">
+    <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+    <div class="toast-message" id="toast-message">Email berhasil disalin ke clipboard!</div>
+  </div>
+
+  <!-- Back to top button -->
+  <button id="back-to-top" class="back-to-top print-hide" aria-label="Kembali ke atas">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
