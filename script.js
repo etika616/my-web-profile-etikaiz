@@ -1,15 +1,3 @@
-/**
- * JavaScript Vanilla for Etika Ismatus Zahra - Personal CV & Portfolio
- * Features:
- * - Dynamic Skill Progress Bar Fill (via data-level & IntersectionObserver)
- * - Category Filter Tabs (Semua, Kompetisi, Organisasi, Proyek, Sertifikasi)
- * - Active Navigation Spy on Scroll
- * - Mobile Navigation Menu Toggle
- * - Copy Email to Clipboard with Blue Toast Notification
- * - Download / Print CV Handler
- * - Back to Top Button
- */
-
 document.addEventListener('DOMContentLoaded', () => {
 
   // 1. MOBILE MENU TOGGLE
